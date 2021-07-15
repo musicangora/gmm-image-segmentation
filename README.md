@@ -65,14 +65,16 @@ end for
 - I：D x Dの単位行列
 - param：ハイパーパラメータ
 
-paramの値によってセグメンテーションの結果が変化する
+paramの値によってセグメンテーションの結果が変化する。今回は、param = 3.0以上でうまくいく事がわかったため、param = 3.0で実験を行っている。
 
-|![]()|![]()|![]()|
+|![](optimize_param/result_0.005.png)|![](optimize_param/result_0.1.png)|![](optimize_param/result_1.0.png)|
 |:---:|:---:|:---:|
+|![](optimize_param/plot_0.005.png)|![](optimize_param/plot_0.1.png)|![](optimize_param/plot_1.0.png)|
 |param = 0.005|param = 0.1|param = 1.0|
 
-|![]()|![]()|![]()|
+|![](optimize_param/result_2.0.png)|![](optimize_param/result_5.0.png)|![](optimize_param/result_10.0.png)|
 |:---:|:---:|:---:|
+|![](optimize_param/plot_2.0.png)|![](optimize_param/plot_5.0.png)|![](optimize_param/plot_10.0.png)|
 |param = 2.0|param = 5.0|param = 10.0|
 
 
