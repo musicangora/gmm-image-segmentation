@@ -51,7 +51,7 @@
 パラメータのサンプルμ, Λ, πに初期値を設定
 for i=1, ..., MAXITER do
     for n=1, ..., N do
-        式(4.9.3)を用いてs_nをサンプル
+        式(4.93)を用いてs_nをサンプル
     end for
     for k=1, ..., K do
         式(4.102)を用いてΛ_kをサンプル
@@ -60,6 +60,13 @@ for i=1, ..., MAXITER do
     式(4.44)を用いてπをサンプル
 end for
 ```
+
+### 式
+- <img src="https://latex.codecogs.com/svg.image?\bg_white&space;\;&space;\mathbf{s}_n&space;\sim&space;\mathrm{Cat}(\mathbf{s}_n|\eta_n)&space;\;" title="\bg_white \; \mathbf{s}_n \sim \mathrm{Cat}(\mathbf{s}_n|\eta_n) \;" /> &ensp; (4.93)
+- <img src="https://latex.codecogs.com/svg.image?\bg_white&space;\;&space;\mathbf{\Lambda}_k&space;\sim&space;\mathcal{W}(\mathbf{\Lambda}_k|\hat\nu_k,&space;\hat{\mathbf{W}}_k)&space;\;" title="\bg_white \; \mathbf{\Lambda}_k \sim \mathcal{W}(\mathbf{\Lambda}_k|\hat\nu_k, \hat{\mathbf{W}}_k) \;" /> &ensp; (4.102)
+- <img src="https://latex.codecogs.com/svg.image?\bg_white&space;\;&space;\mathbf{\mu}_k&space;\sim&space;\mathcal{N}(\mathbf{\mu}_k|\hat{\mathbf{m}}_k,&space;(\hat{\beta}_k\mathbf{\Lambda}_k)^{-1})&space;\;" title="\bg_white \; \mathbf{\mu}_k \sim \mathcal{N}(\mathbf{\mu}_k|\hat{\mathbf{m}}_k, (\hat{\beta}_k\mathbf{\Lambda}_k)^{-1}) \;" /> &ensp; (4.98)
+- <img src="https://latex.codecogs.com/svg.image?\bg_white&space;\;&space;\mathbf{\pi}&space;\sim&space;\mathrm{Dir}(\mathbf{\pi}|\hat{\mathbf{\alpha}})&space;\;" title="\bg_white \; \mathbf{\pi} \sim \mathrm{Dir}(\mathbf{\pi}|\hat{\mathbf{\alpha}}) \;" /> &ensp; (4.44)
+
 
 ## Λの事前分布のハイパーパラメータW = I * param
 - I：D x Dの単位行列
