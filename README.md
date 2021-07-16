@@ -29,6 +29,10 @@ $ 最大試行回数を入力してください：15
  iter: 15 [====================>](100％)
 ```
 
+## プログラムの違い
+- [gmm_gibbs_image_segmentaion.py](gmm_gibbs_image_segmentaion.py)：素直にべた書きしたもの。分布のプロットも実装されている。アルゴリズム追いたいならこっち。
+- [main.py](main.py)：上のコードをクラス化したもの。動かしたいだけならこっち。
+
 ## Sample Result
 ### K-Means法によるクラスタリングとギブスサンプリングによるクラスタリングの比較
 ![](sample_result/k-means_gibbs_comparison.png)
